@@ -1,0 +1,351 @@
+p {
+    color: gray;
+}
+
+.brand-name {
+
+    text-decoration: none;
+    font-size: xx-large;
+    color: black;
+}
+
+.minnieee {
+    color: red;
+}
+
+.div2 {
+    font-size: large;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.home {
+    color: red;
+}
+
+.others {
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+}
+
+.carousel,
+.carousel-item {
+    height: 75vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    width: auto;
+    /* Maintains aspect ratio for images */
+    object-fit: cover;
+    /* Ensures images fill the container without stretching */
+}
+
+.carousel {
+    border-radius: 15px;
+    /* Adjust radius to preference */
+    overflow: hidden;
+    /* Ensures content respects the rounded corners */
+}
+
+#card {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* SVG styling */
+.circle {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    /* Rotate to start from the top */
+}
+
+.circle .background {
+    fill: none;
+    stroke: #e6e6e6;
+    /* Background color of the circle */
+    stroke-width: 10;
+}
+
+.circle .progress1 {
+    fill: none;
+    stroke: #4caf50;
+    /* Progress color */
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle (2 * π * radius) */
+    stroke-dashoffset: calc(282.6 - (282.6 * 0.87));
+    /* Adjust for the percentage (80%) */
+    transition: stroke-dashoffset 0.5s ease;
+    /* Smooth animation */
+}
+
+.circle .progress2 {
+    fill: none;
+    stroke: hotpink;
+    /* Progress color */
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle (2 * π * radius) */
+    stroke-dashoffset: calc(282.6 - (282.6 * 0.95));
+    /* Adjust for the percentage (80%) */
+    transition: stroke-dashoffset 0.5s ease;
+    /* Smooth animation */
+}
+
+.circle .progress3 {
+    fill: none;
+    stroke: yellowgreen;
+    /* Progress color */
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle (2 * π * radius) */
+    stroke-dashoffset: calc(282.6 - (282.6 * 0.9));
+    /* Adjust for the percentage (80%) */
+    transition: stroke-dashoffset 0.5s ease;
+    /* Smooth animation */
+}
+
+.circle .progress4 {
+    fill: none;
+    stroke: violet;
+    /* Progress color */
+    stroke-width: 10;
+    stroke-dasharray: 282.6;
+    /* Circumference of the circle (2 * π * radius) */
+    stroke-dashoffset: calc(282.6 - (282.6 * 0.8));
+    /* Adjust for the percentage (80%) */
+    transition: stroke-dashoffset 0.5s ease;
+    /* Smooth animation */
+}
+
+/* Centered percentage text */
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -25%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.row{
+    margin-top: 30px;
+}
+
+.card-bg1 p,
+.card-bg2 p,
+.card-bg3 p {
+    color: white;
+    font-weight: 500;
+}
+
+/* .nigga{
+    margin-top: 30px;
+} */
+
+.card-bg1 {
+    background-image: url('images/2.png');
+    border-radius: 5px;   
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    color: white;
+    padding: 40px;
+}
+
+.card-bg2 {
+    border-radius: 5px;
+    background-image: url('images/3.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    color: white;
+    padding: 40px;
+}
+
+.card-bg3 {
+    border-radius: 5px;
+    background-image: url('images/4.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    color: white;
+    padding: 40px;
+}
+
+.card-body a{
+    font-weight: 700;
+}
+
+.card img{
+    margin-left: 15px;
+}
+
+.card .text-danger{
+    font-weight: 700;
+}  
+
+.question{
+    height: 100%;
+    width: 100%;
+}
+
+.accordion{
+    width: 100%;
+}
+
+.acc-div{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* contact us section */
+
+.contact-1{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-11{
+    height: 250px;
+    background-color: rgba(187, 236, 108, 0.1);
+    border-radius: 10px;
+    margin: 2.5rem;
+    position: relative;
+}
+
+.contact-11 img{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+#blue{
+    background-color: rgba(135, 206, 235, 0.2 );
+}
+
+.contact-11 .info{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.info p{
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.info b{
+    color: black;
+}
+
+.contact-2 h3{
+    margin-bottom: 20px;
+}
+
+.contact-2 input{
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(220, 220, 220, 0.3);
+    font-weight: 500;
+    font-size: larger;
+}
+
+#messagetxt{
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(220, 220, 220, 0.3);
+    border: none;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.custom-btn button{
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+.last-container{
+    margin-top: 75px;
+    border-radius: 10px;
+    background-color: rgba(220, 220, 220, 0.3);
+    height: 200px;
+}
+
+.last-container h3{
+    margin-bottom: 20px;
+}
+
+.social a{
+    color: black;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+
+/* footer portion */
+
+footer{
+    background-color: black;
+    
+}
+
+.footer{
+    height: auto;
+}
+
+.footer p{
+    color: rgba(128, 128, 128, 1);
+    font-size: large;
+}
+
+.footer h1,
+.footer h4{
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer .d-flex p{
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.footer .d-flex i{
+    color: goldenrod;
+    font-size: large;
+}
