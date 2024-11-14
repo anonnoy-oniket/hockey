@@ -1,0 +1,252 @@
+* {
+    background-color: black;
+}
+
+/* navbar styles */
+
+.navbar {
+    background-color: black !important;
+    padding: 0 !important;
+    /* margin: 10px; */
+}
+
+.logo {
+    width: 50vw;
+}
+
+.logo img {
+    height: 10rem;
+
+}
+
+.nav-link {
+    color: white !important;
+    font-size: x-large !important;
+    margin-right: 2.5rem;
+}
+
+.nav-toggle {
+    color: white;
+}
+
+.cv-download{
+    text-decoration: none;
+}
+
+.navbar button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+}
+
+.download-btn {
+    /* color: black; */
+    border: none;
+    color: black;
+    background-color: rgb(13, 202, 240);
+}
+
+
+/* main section styles */
+
+main {
+    color: white;
+}
+
+.glow {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00bfff, 0 0 40px #00bfff, 0 0 50px #00bfff, 0 0 60px #00bfff, 0 0 70px #00bfff;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #1e90ff, 0 0 40px #1e90ff, 0 0 50px #1e90ff, 0 0 60px #1e90ff, 0 0 70px #1e90ff, 0 0 80px #1e90ff;
+    }
+}
+
+
+.main-intro button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-weight: 700;
+    color: white;
+    font-size: larger;
+}
+
+main .container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* portfolio section */
+
+.portfolio-container {
+    border: 1px solid white;
+}
+
+.portfolio-container .car-col {
+    border: 0px;
+    padding: 10px 0px;
+}
+
+.portfolio-container button,
+.exp button {
+    font-weight: 600;
+}
+
+
+/* contact section */
+
+.contact-box {
+    border: 1px solid white;
+    box-shadow: 10px 10px 20px rgb(255, 255, 255, 0.5);
+}
+
+textarea.custom-textarea {
+    width: 40%;
+    margin: 0.5rem 0px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    resize: vertical;
+    outline: none;
+}
+
+textarea.custom-textarea:focus {
+    box-shadow: 0 0 100px blue;
+    border: 1px solid blue;
+}
+
+
+
+.batman-button {
+    width: 50%;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #ffd700;
+    background-color: #000;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.batman-button:hover {
+    color: #fff;
+    background-color: #ffd700;
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700;
+    transform: scale(1.05);
+}
+
+.batman-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    opacity: 0;
+    transform: scale(0);
+    animation: bat-pulse 2s infinite;
+    z-index: -1;
+}
+
+.batman-button:active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500%;
+    height: 500%;
+    background: rgba(255, 215, 0, 0.15);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: batman-explosion 0.5s ease-out;
+}
+
+@keyframes bat-pulse {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.4);
+    }
+}
+
+@keyframes batman-explosion {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* footer styles */
+
+.footer p:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+}
+
+.footer {
+    background-color: #000;
+    color: #ffd700;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 2px solid #ffd700;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon-link {
+    margin: 0 10px;
+    color: #ffd700;
+    font-size: 1.5rem;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.icon-link:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700;
+    transform: scale(1.1);
+}
